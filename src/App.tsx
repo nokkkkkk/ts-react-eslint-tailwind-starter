@@ -7,17 +7,19 @@ const App: React.FC = () => {
   return (
     <div className="App flex-wrap bg-gray-500">
       <header className="App-header">
+        <div className="text-green-700">
+          <p>
+            Un starter TypeScript - React - ESLint - TailWind.
+          </p>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="text-red-400"
+          href="https://ufood.app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Look at a vue project instead
         </a>
       </header>
     </div>

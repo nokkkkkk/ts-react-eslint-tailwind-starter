@@ -1,10 +1,11 @@
+/* eslint-disable no-use-before-define */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const element = React.createElement('h1', { className: 'flex justify-center text-red-600  text-9xl h-40  ' }, 'newInstaGram');
+const element = React.createElement('h1', { className: 'flex justify-center text-green-600  text-9xl ' }, 'InstaNEW');
 
 ReactDOM.render(
   element,
