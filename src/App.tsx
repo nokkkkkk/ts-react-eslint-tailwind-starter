@@ -1,9 +1,25 @@
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 const App: React.FC = () => {
+  interface Istate {
+    people:{
+      name: string
+      age: number
+      url: string
+      note?: string
+    }[]
+  }
+
+  const [people, setPeople] = useState<Istate['people']>([]);
+
+  // people.map(person => {
+  //   person.age = 10;
+  //   person.name = 'Gui';
+  // });
+
   return (
     <div className="App flex-wrap bg-gray-500">
       <header className="App-header">
