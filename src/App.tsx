@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// eslint-disable-next-line no-unused-vars
+import List from './components/List';
 
 const App: React.FC = () => {
   interface Istate {
@@ -13,15 +15,21 @@ const App: React.FC = () => {
     }[]
   }
 
-  const [people, setPeople] = useState<Istate['people']>([]);
-
-  // people.map(person => {
-  //   person.age = 10;
-  //   person.name = 'Gui';
-  // });
+  // eslint-disable-next-line no-unused-vars
+  const [people, setPeople] = useState<Istate['people']>([
+    {
+      name: 'LeBron James',
+      url: 'https://en.wikipedia.org/wiki/Pierre_Person#/media/File:Pierre-Person.jpg',
+      age: 36,
+      note: 'a note !'
+    }
+  ]);
 
   return (
     <div className="App flex-wrap bg-gray-500">
+
+      <List people={people} />
+
       <header className="App-header">
         <div className="text-green-700">
           <p>
