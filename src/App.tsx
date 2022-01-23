@@ -19,9 +19,21 @@ const App: React.FC = () => {
   const [people, setPeople] = useState<Istate['people']>([
     {
       name: 'LeBron James',
-      url: 'https://fastly.4sqi.net/img/general/width960/irpATYjuFvmO3tbJP-GkuQiM0Q4iEM3Oi2ubRV79uSQ.jpg',
+      url: 'https://cdn.nba.com/manage/2022/01/GettyImages-1365294874-scaled-e1642701878811-784x550.jpg',
       age: 36,
       note: 'a note !'
+    },
+    {
+      name: 'miss Missy',
+      url: 'http://www.scienze-naturali.com/wp-content/uploads/2017/04/Deveronvale-Perfection.jpg',
+      age: 63,
+      note: 'another note !'
+    },
+    {
+      name: 'Lill Siss',
+      url: 'https://static.wikia.nocookie.net/angrykid/images/e/ec/Poppit.jpg/revision/latest/scale-to-width-down/500?cb=20120813164543',
+      age: 42,
+      note: 'another other note !'
     }
   ]);
 
