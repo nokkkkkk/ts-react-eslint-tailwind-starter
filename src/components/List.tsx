@@ -12,13 +12,25 @@ interface IProps {
   }
 
 const List: React.FC<IProps> = ({ people }) => {
+  // eslint-disable-next-line no-undef
+  const renderList = (): JSX.Element[] => {
+    return people.map((person) => {
+      return (
+        <li>
+            <div>
+                <img className='object-scale-down h-48 w-96' src={person.url} alt="???" />
+                <h2>{person.name}</h2>
+            </div>
+            <p>{person.age} years old</p>
+            <p>{person.note}</p>
+        </li>
+      );
+    });
+  };
+
   return (
         <ul>
-            {people.map(person => {
-              return (
-                    <div>{person.name}</div>
-              );
-            })}
+            {renderList()}
         </ul>
   );
 };

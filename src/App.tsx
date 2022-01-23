@@ -19,7 +19,7 @@ const App: React.FC = () => {
   const [people, setPeople] = useState<Istate['people']>([
     {
       name: 'LeBron James',
-      url: 'https://en.wikipedia.org/wiki/Pierre_Person#/media/File:Pierre-Person.jpg',
+      url: 'https://fastly.4sqi.net/img/general/width960/irpATYjuFvmO3tbJP-GkuQiM0Q4iEM3Oi2ubRV79uSQ.jpg',
       age: 36,
       note: 'a note !'
     }
