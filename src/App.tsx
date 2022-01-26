@@ -1,64 +1,40 @@
 /* eslint-disable no-use-before-define */
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 // eslint-disable-next-line no-unused-vars
-import List from './components/List';
+import Home from './views/Home';
+import About from './views/About';
 
 const App: React.FC = () => {
-  interface Istate {
-    people:{
-      name: string
-      age: number
-      url: string
-      note?: string
-    }[]
-  }
-
-  // eslint-disable-next-line no-unused-vars
-  const [people, setPeople] = useState<Istate['people']>([
-    {
-      name: 'LeBron James',
-      url: 'https://cdn.nba.com/manage/2022/01/GettyImages-1365294874-scaled-e1642701878811-784x550.jpg',
-      age: 36,
-      note: 'a note !'
-    },
-    {
-      name: 'miss Missy',
-      url: 'http://www.scienze-naturali.com/wp-content/uploads/2017/04/Deveronvale-Perfection.jpg',
-      age: 63,
-      note: 'another note !'
-    },
-    {
-      name: 'Lill Siss',
-      url: 'https://static.wikia.nocookie.net/angrykid/images/e/ec/Poppit.jpg/revision/latest/scale-to-width-down/500?cb=20120813164543',
-      age: 42,
-      note: 'another other note !'
-    }
-  ]);
-
   return (
-    <div className="App flex-wrap bg-gray-500">
+      <Router>
+        <div>
+          <nav className="navbar navbar-expand-lg bg-white">
+          <ul className="navbar-nav mr-auto">
+            <li>
+              <a className="navbar-brand" href="/">
+              </a>
+            </li>
+            <li><Link to={'/'} className="nav-link">Home</Link></li>
+            <li><Link to={'/about'} className="nav-link">About</Link></li>
+          </ul>
+             <ul id="nav-mobile" className="right navbar-nav">
+            <li className="float-right">
+                  <a className="nav-link float-right" href="/" >Quit</a>
+            </li>
+          </ul>
+          </nav>
+          <hr />
+          <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+          </Routes>
+          <div>
+           </div>
 
-      <List people={people} />
-
-      <header className="App-header">
-        <div className="text-green-700">
-          <p>
-            Un starter TypeScript - React - ESLint - TailWind.
-          </p>
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="text-red-400"
-          href="https://ufood.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Look at a vue project instead
-        </a>
-      </header>
-    </div>
+      </Router>
   );
 };
 
