@@ -1,0 +1,8 @@
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 56px;
+  background-color: aliceblue;
+}

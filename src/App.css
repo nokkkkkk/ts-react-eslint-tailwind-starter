@@ -1,4 +1,3 @@
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -10,18 +9,47 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background: linear-gradient(#00e0ee,#ad00fe);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  /*font-size: calc(10px + 2vmin);
+  color: white;*/
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Group-list {
+  background: rgba(255, 255, 255, 0.3);
+  width: 280px;
+  flex-shrink: 0;
+
+}
+
+.Contact-list {
+  background: rgba(255, 255, 255, 0.3);
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: contents;
+}
+
+.post {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 600px;
+  padding: 10px;
 }
 
 @keyframes App-logo-spin {
