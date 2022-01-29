@@ -8,12 +8,12 @@ const NavBar: React.FC = () => {
   return (
     <div>
       <Link to={"/"}>
-        <FontAwesomeIcon icon={faHome} />
+        <FontAwesomeIcon icon={faHome} size="2x" color="blue" />
       </Link>
       <Link to={"/about"}>
-        <FontAwesomeIcon icon={faPlusSquare} />
+        <FontAwesomeIcon icon={faPlusSquare} size="2x" />
       </Link>
-      <FontAwesomeIcon icon={faHeart} />
+      <FontAwesomeIcon icon={faHeart} size="2x" />
     </div>
   );
 };

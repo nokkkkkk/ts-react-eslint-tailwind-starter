@@ -27,7 +27,12 @@ module.exports = {
         900: "#006e75",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+          yeseva: ['Yeseva One', 'serif'],
+          josefin: ['Josefin Sans', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 };

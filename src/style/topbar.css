@@ -5,4 +5,7 @@
   justify-content: space-between;
   height: 56px;
   background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

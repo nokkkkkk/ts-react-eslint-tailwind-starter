@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <TopBar />
-      <div className="container">
+      <div className="main-content">
         <div className="App-body">
           <GroupList />
           <Routes>
