@@ -13,8 +13,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <TopBar />
-      <div className="main-content">
-        <div className="App-body">
+      <div className="Main-content h-full w-full flex overflow-hidden pt-14">
+        <div className="flex flex-row justify between h-full w-full bg-gradient-to-b from-robins-egg-blue-500 to-electric-violet-500">
           <GroupList />
           <Routes>
             <Route path="/" element={<Home />} />

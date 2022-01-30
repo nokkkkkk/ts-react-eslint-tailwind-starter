@@ -7,15 +7,15 @@ const PostList: React.FC = () => {
   // eslint-disable-next-line no-undef
 
   return (
-    <div className="post">
+    <div className="flex flex-row bg-white rounded-xl m-3 p-3">
       <div className="image">
-        <img className="object-scale-down h-20 w-40" src={stag} alt="???" />
+        <img className="object-scale-down h-80 w-80" src={stag} alt="???" />
       </div>
       <div className="post-content">
-        <h2>Blabla</h2>
+        <h2 className="font-yeseva text-3xl">Blabla</h2>
 
-        <p>Bla bla bla</p>
-        <p>Bla blabla</p>
+        <p className="font-josefin text-xl">Bla bla bla</p>
+        <p className="font-josefin text-xl">Bla blabla</p>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import PostList from "../components/PostList";
 
 const Home: React.FC = () => {
   return (
-    <div className="post-list">
+    <div className="Post-list ml-3 mr-3 overflow-auto w-full">
       <PostList />
       <PostList />
       <PostList />

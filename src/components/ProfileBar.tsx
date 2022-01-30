@@ -5,10 +5,16 @@ import { faBell, faCommentDots } from "@fortawesome/free-regular-svg-icons";
 
 const ProfileBar: React.FC = () => {
   return (
-    <div>
-      <FontAwesomeIcon icon={faBell} />
-      <FontAwesomeIcon icon={faCommentDots} />
-      <FontAwesomeIcon icon={faSortDown} />
+    <div className="flex flex-row justify-between items-center m-3">
+      <div className="m-2 bg-white rounded-full p-2">
+        <FontAwesomeIcon icon={faBell} size="2x" />
+      </div>
+      <div className="m-2 bg-white rounded-full p-2">
+        <FontAwesomeIcon icon={faCommentDots} size="2x" />
+      </div>
+      <div className="m-2 bg-white rounded-full p-2">
+        <FontAwesomeIcon icon={faSortDown} size="2x" />
+      </div>
     </div>
   );
 };

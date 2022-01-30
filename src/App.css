@@ -9,68 +9,8 @@
   }
 }
 
-.App-body {
-  background: linear-gradient(#00e0ee,#ad00fe);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100%;
-  width:100%;
-}
-
 .App-link {
   color: #61dafb;
-}
-
-.Group-list {
-  background: rgba(255, 255, 255, 0.3);
-  width: 280px;
-  flex-shrink: 0;
-  overflow: auto;
-
-}
-
-.Contact-list {
-  background: rgba(255, 255, 255, 0.3);
-  width: 280px;
-  flex-shrink: 0;
-  overflow: auto;
-}
-
-.main-content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-  will-change: overflow;
-  padding-top: 56px;
-}
-
-.post {
-  background-color: white;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.post-content h2 {
-  font-family: 'Yeseva One';
-  font-size: 36px;
-}
-
-.post-content p {
-  font-family: 'Josefin Sans';
-  font-size: 28px;
-}
-
-.post-list {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: -webkit-fill-available;
-  overflow: auto;
 }
 
 @keyframes App-logo-spin {
